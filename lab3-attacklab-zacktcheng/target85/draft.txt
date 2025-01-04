@@ -1,0 +1,53 @@
+For rtarget.l2.txt
+
+402721:	b8 58 91 c3 46       	mov    $0x46c39158,%eax
+
+58 == popq %rax
+402722
+
+40274b:	b8 fe 58 90 90       	mov    $0x909058fe,%eax
+58 == popq %rax
+40274d
+
+402736:	b8 48 89 c7 c3       	mov    $0xc3c78948,%eax
+40273b:	c3                      ret 
+
+48 89 c7 c3 
+== 
+movq %rax, %rdi
+ret
+402737
+
+
+For rtarget.l3.txt
+
+402804:	8d 87 47 48 89 e0    	lea    -0x1f76b7b9(%rdi),%eax
+48 89 e0 == mov %rsp %rax
+402807
+
+402740:	c7 07 48 89 c7 90    	movl   $0x90c78948,(%rdi)
+48 89 c7 90 == mov %rax %rdi
+402742
+
+40274b:	b8 fe 58 90 90       	mov    $0x909058fe,%eax
+58 90 90 == popq %rax
+40274d
+
+4028a7:	c7 07 71 89 c2 90    	movl   $0x90c28971,(%rdi)
+89 c2 == mov %eax %edx
+4028aa
+
+402850:	c7 07 89 d1 38 db    	movl   $0xdb38d189,(%rdi)
+89 d1 == mov %edx %ecx
+402852
+
+40280f:	8d 87 89 ce 90 c7    	lea    -0x386f3177(%rdi),%eax
+89 ce == mov %ecx %esi
+402811
+
+40277e:	48 8d 04 37          	lea    (%rdi,%rsi,1),%rax
+lea    (%rdi,%rsi,1),%rax
+40277e:
+
+402740:	c7 07 48 89 c7 90    	movl   $0x90c78948,(%rdi)
+48 89 c7 90 == mov %rax %rdi

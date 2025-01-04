@@ -1,0 +1,7 @@
+I turned the moon into something I call a Death Star.
+0 1 1 2 3 5
+2 402
+352 4 DrEvil
+5 115
+1 4 2 6 5 3
+50
